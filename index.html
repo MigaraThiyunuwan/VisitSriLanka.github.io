@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VisitSriLanka</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+         <!-- this link for photo animation -->
+         <script src="bower_components/aos/dist/aos.js"></script> 
+         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">  
+    </head>
+    <body>
+ <style>
+            h1 {font-family: Garamond, serif;}
+           </style>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Visit<span style="color:#0000FF">S</span><span style="color:#66CC66">r</span><span style="color:#FF9966">i</span><span style="color:#e90a0a">L</span><span style="color:#1be4e4">a</span><span style="color:#0bee29">n</span><span style="color:hsl(66, 87%, 55%)">k</span><span style="color:#001aff">a</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "Places.html" class = "nav-link">Places</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "hotels.html" class = "nav-link">Hotels</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "wildlife.html" class = "nav-link">WildLife</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "reviews.html" class = "nav-link">Reviews</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>The Island is Waiting<br>For You</h1>  
+                </div>
+
+                <div class = "header-form">
+                    <h2>Choose your Travel location:</h2>
+                    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                        <input name="sitesearch" type="hidden" >
+                        <input autocomplete="on" class="form-control search" name="q" placeholder="Destination Name" required="required"  type="text">
+                        
+                        <input type="submit" class = "btn" value = "Search" style="margin: 15px;">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- featured section -->
+        <section class="auto-slider">
+            <div id="slider">
+                <figure>
+                    <img src="images/ayubowan.png" alt="Image">
+                    <img src="images/ayubowan2.png" alt="Image">
+                    <img src="images/ayubowan3.png" alt="Image">
+                   
+                </figure>
+                <div class="indicator"></div>
+            </div>
+        </section>
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Welcome To Sri Lanka</span>
+                    <h2 class = "lg-title">featured places</h2>
+                </div>
+
+                <div class = "featured-row">
+
+                    <div data-aos="fade-right">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/sigiriya.png" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Sigiriya
+                            </span>
+                            <div>
+                                <p class = "text">Sigiriya or Sinhagiri is an ancient rock fortress located in the northern 
+                                    Matale District near the town of Dambulla in the Central Province, Sri Lanka.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div data-aos="fade-down">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/galle.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Galle
+                            </span>
+                            <div>
+                                <p class = "text">Galle is a city on the southwest coast of Sri Lanka. It is known for Galle Fort, the
+                                     fortified old city founded by Portuguese colonists in the 16th century. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div data-aos="fade-left">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/anuradhapura.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                               Anuradhapura
+                            </span>
+                            <div>
+                                <p class = "text">Anuradhapura is a major city in Sri Lanka. It is the capital city of North Central Province, Sri
+                                     Lanka and the capital of Anuradhapura District. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div data-aos="fade-right">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/daladhamaligawa.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Temple Of Tooth Relic,Kandy
+                            </span>
+                            <div>
+                                <p class = "text">Temple of the Sacred Tooth Relic  commonly known as the ශ්‍රී දළදා මාළිගාව, is a
+                                     Buddhist temple in Kandy, Sri Lanka. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                      
+                <div data-aos="fade-up">  
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/nelligala.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Nelligala Buddhist Center,Kandy
+                            </span>
+                            <div>
+                                <p class = "text">Nelligala International Buddhist Center is a Buddhist temple situated in Muruthalawa village in the Kandy district.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+                <div data-aos="fade-right">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/koneshwaram.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Thiru Koneshwaram Kovil,Trincomalee
+                            </span>
+                            <div>
+                                <p class = "text">  The Temple of the Thousand Pillars and Dakshina-Then Kailasam is a classical-medieval Hindu temple complex in Trincomalee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/sinharaja.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Sinharaja Forest
+                            </span>
+                            <div>
+                                <p class = "text">Sinharaja Forest Reserve is a forest reserve and a biodiversity hotspot in Sri Lanka.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/hikkaduwa.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Hikkaduwa
+                            </span>
+                            <div>
+                                <p class = "text">Hikkaduwa is a seaside resort town in southwestern Sri Lanka. It’s known for its strong surf and beaches</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/nallur.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Nallur Kovil,Jaffna
+                            </span>
+                            <div>
+                                <p class = "text">Nallur Kandaswamy Kovil is a significant Hindu temple, located in Nallur, Northern Province, Sri Lanka.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/hunnasgiriya.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Hunnasgiriya,Mathale
+                            </span>
+                            <div>
+                                <p class = "text">Hunnasgiriya is a beautiful village in Sri Lanka. It is located within Central Province.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-aos="fade-down">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/kelaniya.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Kelaniya Temple
+                            </span>
+                            <div>
+                                <p class = "text">The Kelaniya Raja Maha Vihara is a Buddhist temple in Kelaniya, Sri Lanka. It is located 11 km north-east of Colombo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/nuwaraeliya.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Nuwara Eliya
+                            </span>
+                            <div>
+                                <p class = "text">Nuwara Eliya is a city in the tea country hills of central Sri Lanka. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+                <!-- trip plan section -->
+                <div class = "container">
+                    <div class = "title-wrap">
+                        
+                        <h2 class = "lg-title2">Plan your trip</h2>
+                     
+                        <span class = "sm-title2">You can get a new experiance through our service.Also tell us all your requirements.</span>
+                        <a href="places.html" target="_blank">
+                        <button type = "button" class = "custom-btn">SHOW MORE</button>
+                    </a>
+                  
+                    </div>
+                    </div>
+                  
+                    
+                    <div id = "gallery" class = "py-4">
+                        <div class = "container">
+                            <div class = "gallery-row">
+                                <div class = "gallery-item shadow">
+                                    <a href="https://www.eta.gov.lk/slvisa/visainfo/center.jsp?locale=en_US">
+                                    <img src = "images/visa.jpg" alt = "gallery img">
+                                    <span class = "zoom-icon">
+                                         <button class="button button1">Apply Visa Online</button>
+                                       </span>
+                                </a> 
+                                </div> 
+                                <div class = "gallery-item shadow">
+                                    <a href="https://bit.ly/3Jzi5iD">
+                                    <img src = "images/plane.png" alt = "gallery img">
+                                    <span class = "zoom-icon">
+                                        <button class=" button button1">Book a flight</button>
+                                     </span>
+                                </a>
+                                </div>
+                                <div class = "gallery-item shadow">
+                                    <a href="https://www.srilanka.travel/travel-agents">
+                                    <img src = "images/agent.jpg" alt = "gallery img">
+                                    <span class = "zoom-icon">
+                                        <button class="button button1">Find a Travel Agent</button>
+                                        </span>
+                                </a>
+                                </div>
+                        </div>
+                        </div>
+                      </div>
+        
+                <!-- end of trip plan section -->
+
+
+
+       
+
+      <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/video-section.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <!-- end of video 
+
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Visit<span><span style="color:#0000FF">S</span><span style="color:#66CC66">r</span><span style="color:#FF9966">i</span><span style="color:#e90a0a">L</span><span style="color:#1be4e4">a</span><span style="color:#0bee29">n</span><span style="color:hsl(66, 87%, 55%)">k</span><span style="color:#001aff">a</span>
+                    </a>
+                    <p class = "text">Sri Lanka is also a land of<br> staggering contrast and <br>spectacular beauty due to<br> its compactness.Along the<br> coast, 
+                      visitors can explore<br> amazing beaches, safari tours.
+                </div>
+  
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+  
+                <div class = "footer-item">
+                    <h2>Most Visited Places:</h2>
+                    <ul>
+                        <li><a href = "https://en.wikipedia.org/wiki/Sigiriya">Sigiriya Rock Fortress</a></li>
+                        <li><a href = "https://en.wikipedia.org/wiki/Galle_Fort">Galle Dutch Fort</a></li>
+                        <li><a href = "https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve">Sinharaja Forest Reserve</a></li>
+                        <li><a href = "https://en.wikipedia.org/wiki/Arugam_Bay">Arugam Bay</a></li>
+                        <li><a href = "https://en.wikipedia.org/wiki/Nine_Arch_Bridge,_Demodara">Nine Arch Bridge</a></li>
+                        <li><a href = "https://en.wikipedia.org/wiki/Ravana_Falls">Ravana Falls</a></li>
+                      
+                    </ul>
+                </div>
+  
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>AOS.init();</script>
+
+
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+    </body>
+</html>
